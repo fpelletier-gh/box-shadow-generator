@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="css/main.css" />
-    <title>Document</title>
+    <title>Box Shadow Generator</title>
   </head>
   <body>
     <div class="container">
@@ -17,7 +17,8 @@
             <input
               type="color"
               id="background-color-input"
-              class="color-input"
+              class="color-input js-input"
+              data-input="backgroundColor"
               name="background-color-input"
               value="#ffffff"
             />
@@ -27,13 +28,14 @@
             <input
               type="color"
               id="element-background-color-input"
-              class="color-input"
+              class="color-input js-input"
+              data-input="elementBackgroundColor"
               name="element-color-input"
               value="#cccccc"
             />
           </div>
           <div class="slider-container">
-            <label for="h-offset-slider">h-offset :</label>
+            <label for="h-offset-slider" class="label">h-offset :</label>
             <input
               type="range"
               min="-100"
@@ -41,20 +43,22 @@
               value="0"
               name="h-offset-slider"
               id="h-offset-slider"
-              class="slider"
+              class="slider js-input"
+              data-input="hOffset"
             />
             <input
               type="number"
               id="h-offset-input"
               name="h-offset-input"
-              class="manual-input"
               value="0"
               placeHolder="0"
+              class="manual-input js-input"
+              data-input="hOffset"
             />
             <label for="h-offset-input">px</label>
           </div>
           <div class="slider-container">
-            <label for="v-offset-slider">v-offset :</label>
+            <label for="v-offset-slider" class="label">v-offset :</label>
             <input
               type="range"
               min="-100"
@@ -62,19 +66,21 @@
               value="0"
               name="v-offset-slider"
               id="v-offset-slider"
-              class="slider"
+              class="slider js-input"
+              data-input="vOffset"
             />
             <input
               type="number"
               id="v-offset-input"
-              class="manual-input"
               value="0"
               placeHolder="0"
+              class="manual-input js-input"
+              data-input="vOffset"
             />
             <label for="h-offset-input">px</label>
           </div>
           <div class="slider-container">
-            <label for="blur-slider">Blur :</label>
+            <label for="blur-slider" class="label">Blur :</label>
             <input
               type="range"
               min="0"
@@ -82,19 +88,21 @@
               value="0"
               name="blur-slider"
               id="blur-slider"
-              class="slider"
+              class="slider js-input"
+              data-input="blur"
             />
             <input
               type="number"
               id="blur-input"
-              class="manual-input"
+              class="manual-input js-input"
+              data-input="blur"
               value="0"
               placeHolder="0"
             />
             <label for="blur-input">px</label>
           </div>
           <div class="slider-container">
-            <label for="spread-slider">Spread :</label>
+            <label for="spread-slider" class="label">Spread :</label>
             <input
               type="range"
               min="0"
@@ -102,19 +110,21 @@
               value="0"
               name="spread-slider"
               id="spread-slider"
-              class="slider"
+              class="slider js-input"
+              data-input="spread"
             />
             <input
               type="number"
               id="spread-input"
-              class="manual-input"
+              class="manual-input js-input"
+              data-input="spread"
               value="0"
               placeHolder="0"
             />
             <label for="spread-input">px</label>
           </div>
           <div class="slider-container">
-            <label for="opacity-slider">Opacity :</label>
+            <label for="opacity-slider" class="label">Opacity :</label>
             <input
               type="range"
               min="0"
@@ -123,12 +133,14 @@
               step="0.05"
               name="opacity-slider"
               id="opacity-slider"
-              class="slider"
+              class="slider js-input"
+              data-input="opacity"
             />
             <input
               type="number"
               id="opacity-input"
-              class="manual-input"
+              class="manual-input js-input"
+              data-input="opacity"
               value="1"
               placeHolder="1"
             />
@@ -139,7 +151,8 @@
             <input
               type="color"
               id="shadow-color-input"
-              class="color-input"
+              class="color-input js-input"
+              data-input="shadowColor"
               name="shadow-color-input"
               value="#000000"
             />
@@ -158,11 +171,11 @@
             </button>
           </div>
         </div>
-        <div id="display-background">
-          <div id="element-display-background"></div>
+        <div id="display-background" class="display-background">
+          <div id="element-display-background" class="element-display-background"></div>
         </div>
       </div>
     </div>
-    <script src="./js/script.js"></script>
+    <script src="./script/main.js"></script>
   </body>
 </html>
