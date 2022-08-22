@@ -1,5 +1,5 @@
-(function() {
-  "use strict";
+"use strict";
+(function () {
   var displayBackground = document.querySelector("#display-background");
   var elementDisplayBackground = document.querySelector(
     "#element-display-background"
@@ -51,7 +51,7 @@
     },
     filterShadowCode() {
       return "filter: " + this.boxShadowStyle();
-    }
+    },
   };
 
   window.addEventListener("load", startup, false);
@@ -68,7 +68,7 @@
 
   function addEventAll(type, _selector, event) {
     var selectors = selectAll(_selector);
-    selectors.forEach(function(selector) {
+    selectors.forEach(function (selector) {
       selector.addEventListener(type, event, false);
     });
     return selectors;
@@ -123,7 +123,7 @@
     config.backgroundColor = "#ffffff";
     config.elementBackgroundColor = "#b5b5b5";
 
-    inputs.forEach(function(input) {
+    inputs.forEach(function (input) {
       var data = input.dataset.input;
       input.value = config[data];
     });
