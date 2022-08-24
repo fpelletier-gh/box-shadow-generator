@@ -8,13 +8,24 @@ No library were used only Html, Css and Javascript.
 
 [Live preview](https://boxshadow.francispelletier.ca)
 
+## Table of Contents
+
+<!-- vim-markdown-toc GFM -->
+
+- [Requirements](#requirements)
+  - [live-server](#live-server)
+- [Installation](#installation)
+  - [Development](#development)
+
+<!-- vim-markdown-toc -->
+
 ## Requirements
 
 - `live-server` (Node.js)
 
 ### live-server
 
-Assuming you have [Node.js](https://nodejs.org/en/download/) installed:
+Assuming you have [Node.js](https://nodejs.org/en/download/) installed
 
 ```
 $ npm install -g live-server
@@ -22,21 +33,21 @@ $ npm install -g live-server
 
 ## Installation
 
-### Setup for local development:
+### Development
 
-Clone the repository:
+Clone the repository
 
 ```
 $ git clone https://github.com/fpelletier-gh/box-shadow-generator
 ```
 
-Change directory:
+Change directory
 
 ```
 $ cd box-shadow-generator/src
 ```
 
-Launch the live-server:
+Launch the live-server
 
 ```
 $ live-server
